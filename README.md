@@ -10,4 +10,5 @@ CHEQ RTI Client Core logic
 npm install
 npm run build
 npm run test
+npm run docs
 ```
