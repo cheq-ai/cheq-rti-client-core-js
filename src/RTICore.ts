@@ -7,11 +7,11 @@ export class RTICore {
   }
 
   /**
-   * Returns if the path should be ignored in {@link Mode.BLOCKING| Blocking Mode}
+   * Returns if the path should be ignored
    * @param path
    */
   shouldIgnore(path: string): boolean {
-    if (this.config.mode === Mode.BLOCKING && this.config.ignorePaths) {
+    if (this.config.ignorePaths) {
       return this.config.ignorePaths.some(ignorePath => path.match(ignorePath));
     }
     return false;
