@@ -164,9 +164,9 @@ export interface Config {
   challengeCodes?: number[];
 
   /**
-   * Paths that are ignored in {@link Mode.BLOCKING| Blocking Mode}.
+   * Paths that are ignored.
    *
-   * #example
+   * @example
    * ```typescript
    * ['/images', '/api/test', '\\.css$', '\\.js$']
    * ```
